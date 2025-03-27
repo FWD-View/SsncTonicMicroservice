@@ -1,0 +1,18 @@
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "OTHER_SUFFIXED_TEST_TABLE_0"
+ForeignKeyColumn = ["ID_A"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "SUFFIXED_TEST_TABLE_0"
+PrimaryKeyColumn = ["ID_A"]
+TableGroupSize = 10
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "OTHER_SUFFIXED_TEST_TABLE"
+ForeignKeyColumn = ["ID_B"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "SUFFIXED_TEST_TABLE_0"
+PrimaryKeyColumn = ["ID_B"]
+TableGroupSize = 10

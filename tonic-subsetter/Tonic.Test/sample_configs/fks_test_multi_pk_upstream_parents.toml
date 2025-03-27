@@ -1,0 +1,44 @@
+[[ForeignKey]]
+ForeignKeyHostCategory = "TestHost"
+ForeignKeyTable = "TEST_TABLE"
+ForeignKeyColumn = ["T_ID", "B"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "OTHER_TABLE"
+PrimaryKeyColumn = ["ID","NAME"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "TestHost"
+ForeignKeyTable = "TEST_TABLE_1"
+ForeignKeyColumn = ["B", "C"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TEST_TABLE"
+PrimaryKeyColumn = ["B", "C"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "TestHost"
+ForeignKeyTable = "TEST_TABLE_2"
+ForeignKeyColumn = ["B", "C"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TEST_TABLE"
+PrimaryKeyColumn = ["B", "C"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "TestHost"
+ForeignKeyTable = "TEST_TABLE_3"
+ForeignKeyColumn = ["A", "B"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TEST_TABLE"
+PrimaryKeyColumn = ["A", "B"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost_1"
+ForeignKeyTable = "TEST_TABLE_4"
+ForeignKeyColumn = ["B"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TEST_TABLE"
+PrimaryKeyColumn = ["B"]
+IsPrincipal = true

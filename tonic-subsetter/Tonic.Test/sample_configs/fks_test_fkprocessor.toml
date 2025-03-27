@@ -1,0 +1,8 @@
+[[ForeignKey]]
+ForeignKeyHostCategory = "TestHost"
+ForeignKeyTable = "FK_PROCESSOR_TABLE"
+ForeignKeyColumn = ["FK_ID"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "TEST"
+PrimaryKeyColumn = ["ID"]
+IsPrincipal = true

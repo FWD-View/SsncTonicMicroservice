@@ -1,0 +1,63 @@
+[SubsetterOptions]
+QueryBatchSize = 150
+UploadParallelism = 10
+Debug = false
+NoDownstreamUnions = true
+
+[[SourceHost]]
+HostCategory = "DB2ADMIN"
+Host = "IN-PG04HQSH"
+Port = 25000
+User = "db2admin"
+Password = "Javedalam@786"
+Sid = "SAMPLE"
+Schema = "DB2ADMIN"
+CanDbLink= true
+DbType="DB2"
+
+[[DestinationHost]]
+HostCategory = "DB2ADMIN"
+Host = "IN-PG04HQSH"
+Port = 25000
+User = "db2admin"
+Password = "Javedalam@786"
+Sid = "SAMPLE2"
+Schema = "DB2ADMIN"
+CanDbLink= true
+DbType="DB2"
+
+[[DirectTarget]]
+HostCategory = "DB2ADMIN"
+Table = "Upload_test"
+IdColumn = "ID"
+IdKeyTomlName = "TableIds"
+
+[[AdditionalUpstreamStart]]
+HostCategory = "DB2ADMIN"
+Table = "TEST_TABLE"
+
+[[UpstreamFilter]]
+HostCategory = "DB2ADMIN"
+Table = "TEST_TABLE"
+Clause = "ID = 2"
+
+[[ImportIds]]
+TableIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "DB2ADMIN"
+ForeignKeyTable = "TEST_UPSTREAM_TABLE"
+ForeignKeyColumn = ["ID"]
+PrimaryKeyHostCategory = "DB2ADMIN"
+PrimaryKeyTable = "Upload_test"
+PrimaryKeyColumn = ["ID"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "DB2ADMIN"
+ForeignKeyTable = "TEST_TABLE"
+ForeignKeyColumn = ["ID"]
+PrimaryKeyHostCategory = "DB2ADMIN"
+PrimaryKeyTable = "Upload_test"
+PrimaryKeyColumn = ["ID"]
+IsPrincipal = true

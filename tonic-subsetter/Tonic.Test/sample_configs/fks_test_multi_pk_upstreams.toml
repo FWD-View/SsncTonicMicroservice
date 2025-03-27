@@ -1,0 +1,29 @@
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "MULTI_PK_TEST_TABLE"
+ForeignKeyColumn = ["TABLE_1_ID"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TABLE_1"
+PrimaryKeyColumn = ["TABLE_1_ID"]
+MultiTableKeyColumnIndexes = [0]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "MULTI_PK_TEST_TABLE"
+ForeignKeyColumn = ["TABLE_2_ID"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "TABLE_2"
+PrimaryKeyColumn = ["TABLE_2_ID"]
+MultiTableKeyColumnIndexes = [1]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "MULTI_PK_TEST_TABLE"
+ForeignKeyColumn = ["TABLE_3_ID"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "TABLE_3"
+PrimaryKeyColumn = ["TABLE_3_ID"]
+MultiTableKeyColumnIndexes = [2]
+IsPrincipal = true

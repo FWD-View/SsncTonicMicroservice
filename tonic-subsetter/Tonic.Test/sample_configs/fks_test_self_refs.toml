@@ -1,0 +1,28 @@
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "SELF_REF_TEST_TABLE"
+ForeignKeyColumn = ["REF_ID"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "TABLE_2"
+PrimaryKeyColumn = ["ID"]
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "SELF_REF_TEST_TABLE"
+ForeignKeyColumn = ["REF_ID", "TEST_ID"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "TABLE_3"
+PrimaryKeyColumn = ["REF_ID", "TEST_ID"]
+IsPrincipal = true
+    [ForeignKey.ForeignKeyColumnCastType]
+    "REF_ID" = "NUMBER"
+    "TEST_ID" = "NUMBER"
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost2"
+ForeignKeyTable = "OTHER_TABLE"
+ForeignKeyColumn = ["OTHER_ID"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "SELF_REF_TEST_TABLE"
+PrimaryKeyColumn = ["OTHER_ID_B"]
+IsPrincipal = true
