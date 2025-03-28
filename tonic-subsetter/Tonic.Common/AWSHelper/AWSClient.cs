@@ -19,7 +19,6 @@ namespace Tonic.Common.AWSHelper
 
         public static async Task UploadFile(string filePath, string tableName, string path)
         {
-            //var credentials = new BasicAWSCredentials(Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes("PaOBKvElrk@deidentification-stage@pharmacy")), Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes("8lDzISkPQ8+I4Cy0NV7nB7k+rQ/IuPBCksYQJfZp")));
             var credentials = new BasicAWSCredentials("PaOBKvElrk@deidentification-stage@pharmacy","8lDzISkPQ8+I4Cy0NV7nB7k+rQ/IuPBCksYQJfZp");
 
             var config = new AmazonS3Config

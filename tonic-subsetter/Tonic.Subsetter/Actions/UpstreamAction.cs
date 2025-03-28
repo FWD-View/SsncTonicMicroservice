@@ -174,7 +174,7 @@ public record UpstreamAction
 
        // var columnsSelectStr = DBAbstractionLayer.ColumnsSelectStr(columns, (int)DatabaseType.Oracle);
         var columnsSelectStr = DBAbstractionLayer.ColumnsSelectStr(columns, schemaToken);
-        var (keyClause, paramsDict) = Utilities.KeyClause(foreignKeyColumns, keyBatch);
+        var (keyClause, paramsDict) = Utilities.KeyClause(foreignKeyColumns, keyBatch, foreignKeyColumns.Count);
         if (_groupLimit == null)
         {
             return (

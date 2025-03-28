@@ -95,8 +95,7 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
     {
         foreach (var baseFileName in csvQueue.GetConsumingEnumerable())
         {
-            var abc = AWSClient.UploadFile(baseFileName, table.TableName, tempFilePath);
-            var cbd = abc;
+            var result = AWSClient.UploadFile(baseFileName, table.TableName, tempFilePath);
         }
     }
     public bool IsSchemaRestrictedTable(Table table, string hostSchemaName)
@@ -133,11 +132,11 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
                 using var reader = host.ExecuteParameterizedQuery(query, paramsDict);
                 var currentQueryRows = new List<string[]>();
                 var rows = new string[reader.FieldCount];
-                for (int i=0;i<reader.FieldCount;i++)
+                for (int i = 0; i < reader.FieldCount; i++)
                 {
                     var value = reader.GetName(i);
-                   // rows[i] = DBAbstractionLayer.ConvertValueToStringForCsv(value, ((IList<Column>)columns)[i],                    Config.CompressedColumns);
-                    rows[i]= reader.GetName(i);
+                    // rows[i] = DBAbstractionLayer.ConvertValueToStringForCsv(value, ((IList<Column>)columns)[i],                    Config.CompressedColumns);
+                    rows[i] = reader.GetName(i);
 
                 }
                 currentQueryRows.Add(rows);
@@ -305,7 +304,7 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
     public static void WriteRowsToCsv(Table table, string tempFilePath, BlockingCollection<string[]> rowWriteQueue,
         BlockingCollection<string> csvQueue, string dbType, int batchRowCountLimit = DBAbstractionLayer.CsvBatchSize)
     {
-        var baseFileName = Path.Combine(tempFilePath, Path.GetRandomFileName());
+        var baseFileName = Path.Combine(tempFilePath, Path.GetRandomFileName()+ "_"+table.TableName);
         var writer = Utilities.OpenTsvFile(baseFileName + ".csv", table.TableName);
         var count = 0L;
         var c = dbType;
@@ -319,7 +318,7 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
             count = 0;
             writer.Dispose();
             csvQueue.Add(baseFileName);
-            baseFileName = Path.Combine(tempFilePath, Path.GetRandomFileName());
+            baseFileName = Path.Combine(tempFilePath, Path.GetRandomFileName() + "_" + table.TableName);
             writer = Utilities.OpenTsvFile(baseFileName + ".csv", table.TableName);
         }
 

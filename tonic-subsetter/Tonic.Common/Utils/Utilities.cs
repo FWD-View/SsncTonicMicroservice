@@ -176,7 +176,7 @@ public static class Utilities
     }
 
     public static (string, Dictionary<string, string>) KeyClause(IList<string> keyColumns,
-        IList<string[]> filterValues, int keyClauseBatchSize = 999)
+        IList<string[]> filterValues, int upstream = 0, int keyClauseBatchSize = 999)
     {
         if (keyColumns == null || filterValues == null)
         {
@@ -202,7 +202,7 @@ public static class Utilities
             .ToDictionary(tuple => tuple.First, tuple => tuple.Second);
 
         var paramClauses = new List<string>();
-        for (var i = 1; i < paramCount; i += keyColumns.Count)
+        for (var i = upstream; i < paramCount; i += keyColumns.Count)
         {
             var curCount = i;
             paramClauses.Add(keyColumns.Count == 1
