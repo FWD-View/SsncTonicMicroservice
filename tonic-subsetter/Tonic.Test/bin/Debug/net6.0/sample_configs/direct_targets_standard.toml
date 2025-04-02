@@ -1,0 +1,17 @@
+[[DirectTarget]]
+HostCategory = "TestHost"
+Table = "TEST_UPSTREAM_TABLE"
+IdColumn = "ID"
+IdKeyTomlName = "TableIds"
+
+[[AdditionalUpstreamStart]]
+HostCategory = "OtherHost"
+Table = "TEST_TABLE"
+
+[[UpstreamFilter]]
+HostCategory = "OtherHost"
+Table = "TEST_TABLE"
+Clause = "Type = 1"
+
+[[ImportIds]]
+TableIds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

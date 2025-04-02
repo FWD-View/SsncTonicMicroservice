@@ -1,0 +1,679 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclient64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMOSauthclient64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclientTwoPart64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMOSauthclientTwoPart64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMLDAPauthclient64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMLDAPauthclient64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb564.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMkrb564.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb5TwoPart64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMkrb5TwoPart64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMIAMauth64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMIAMauth64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\DB2xml4c_cli64_5_8.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DB2xml4c_cli64_5_8.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcd64.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2trcd64.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcapi64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2trcapi64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trc.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2trc.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2support.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2support.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2osse64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2osse64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2level.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2level.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldap64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2ldap64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldapm64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2ldapm64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2drdat.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2drdat.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2diag.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2diag.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2cli64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2clixml4c64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2clixml4c64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2cli.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 ! )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2app64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2app64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n   \u011F\u011F\u011F\u011F8 \u0022 )$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclient64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMOSauthclient64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclientTwoPart64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMOSauthclientTwoPart64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMLDAPauthclient64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMLDAPauthclient64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb564.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMkrb564.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb5TwoPart64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMkrb5TwoPart64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMIAMauth64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IBMIAMauth64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcd64.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2trcd64.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcapi64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2trcapi64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trc.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2trc.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2support.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2support.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2osse64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2osse64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2level.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2level.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldap64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2ldap64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldapm64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2ldapm64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2drdat.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2drdat.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2diag.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2diag.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2cli64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2clixml4c64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2clixml4c64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2cli.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2app64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:db2app64.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{d2f6510a-150a-4f3f-9d7c-8e38622d26f7}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d2f6510a-150a-4f3f-9d7c-8e38622d26f7}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IBMkrb564.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb564.dll",
+              "RelativeDocumentMoniker": "IBMkrb564.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb564.dll - 2 - RCDATA",
+              "RelativeToolTip": "IBMkrb564.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:55:11.56Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IBMLDAPauthclient64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMLDAPauthclient64.dll",
+              "RelativeDocumentMoniker": "IBMLDAPauthclient64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMLDAPauthclient64.dll - 2 - RCDATA",
+              "RelativeToolTip": "IBMLDAPauthclient64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:55:33.227Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IBMOSauthclientTwoPart64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclientTwoPart64.dll",
+              "RelativeDocumentMoniker": "IBMOSauthclientTwoPart64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclientTwoPart64.dll - 2 - RCDATA",
+              "RelativeToolTip": "IBMOSauthclientTwoPart64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:55:56.849Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IBMOSauthclient64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclient64.dll",
+              "RelativeDocumentMoniker": "IBMOSauthclient64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclient64.dll - 2 - RCDATA",
+              "RelativeToolTip": "IBMOSauthclient64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:56:24.247Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBMkrb5TwoPart64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb5TwoPart64.dll",
+              "RelativeDocumentMoniker": "IBMkrb5TwoPart64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb5TwoPart64.dll - 2 - RCDATA",
+              "RelativeToolTip": "IBMkrb5TwoPart64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:54:51.067Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IBMIAMauth64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMIAMauth64.dll",
+              "RelativeDocumentMoniker": "IBMIAMauth64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMIAMauth64.dll - 2 - RCDATA",
+              "RelativeToolTip": "IBMIAMauth64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:54:15.597Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DB2xml4c_cli64_5_8.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\DB2xml4c_cli64_5_8.dll",
+              "RelativeDocumentMoniker": "DB2xml4c_cli64_5_8.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\DB2xml4c_cli64_5_8.dll",
+              "RelativeToolTip": "DB2xml4c_cli64_5_8.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:53:11.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "db2trcd64.exe - 1 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcd64.exe",
+              "RelativeDocumentMoniker": "db2trcd64.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcd64.exe - 1 - RCDATA",
+              "RelativeToolTip": "db2trcd64.exe - 1 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T09:52:55.258Z",
+              "EditorCaption": " - 1 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "db2trcapi64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcapi64.dll",
+              "RelativeDocumentMoniker": "db2trcapi64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcapi64.dll - 2 - RCDATA",
+              "RelativeToolTip": "db2trcapi64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:52:34.157Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "db2trc.exe - 1 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trc.exe",
+              "RelativeDocumentMoniker": "db2trc.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trc.exe - 1 - RCDATA",
+              "RelativeToolTip": "db2trc.exe - 1 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T09:52:13.215Z",
+              "EditorCaption": " - 1 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "db2support.exe - 1 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2support.exe",
+              "RelativeDocumentMoniker": "db2support.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2support.exe - 1 - RCDATA",
+              "RelativeToolTip": "db2support.exe - 1 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T09:51:49.833Z",
+              "EditorCaption": " - 1 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "db2osse64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2osse64.dll",
+              "RelativeDocumentMoniker": "db2osse64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2osse64.dll - 2 - RCDATA",
+              "RelativeToolTip": "db2osse64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:32:48.581Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "db2level.exe - 1 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2level.exe",
+              "RelativeDocumentMoniker": "db2level.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2level.exe - 1 - RCDATA",
+              "RelativeToolTip": "db2level.exe - 1 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T07:32:28.771Z",
+              "EditorCaption": " - 1 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "db2ldap64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldap64.dll",
+              "RelativeDocumentMoniker": "db2ldap64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldap64.dll - 2 - RCDATA",
+              "RelativeToolTip": "db2ldap64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:32:10.455Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "db2ldapm64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldapm64.dll",
+              "RelativeDocumentMoniker": "db2ldapm64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldapm64.dll - 2 - RCDATA",
+              "RelativeToolTip": "db2ldapm64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:30:00.165Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "db2drdat.exe - 1 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2drdat.exe",
+              "RelativeDocumentMoniker": "db2drdat.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2drdat.exe - 1 - RCDATA",
+              "RelativeToolTip": "db2drdat.exe - 1 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T07:29:38.663Z",
+              "EditorCaption": " - 1 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "db2diag.exe - 1 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2diag.exe",
+              "RelativeDocumentMoniker": "db2diag.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2diag.exe - 1 - RCDATA",
+              "RelativeToolTip": "db2diag.exe - 1 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T07:29:15.749Z",
+              "EditorCaption": " - 1 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "db2cli64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli64.dll",
+              "RelativeDocumentMoniker": "db2cli64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli64.dll - 2 - RCDATA",
+              "RelativeToolTip": "db2cli64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:28:51.95Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "db2clixml4c64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2clixml4c64.dll",
+              "RelativeDocumentMoniker": "db2clixml4c64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2clixml4c64.dll - 2 - RCDATA",
+              "RelativeToolTip": "db2clixml4c64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:28:23.343Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "db2cli.exe - 1 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli.exe",
+              "RelativeDocumentMoniker": "db2cli.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli.exe - 1 - RCDATA",
+              "RelativeToolTip": "db2cli.exe - 1 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T07:25:02.651Z",
+              "EditorCaption": " - 1 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "db2app64.dll - 2 - RCDATA",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2app64.dll",
+              "RelativeDocumentMoniker": "db2app64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2app64.dll - 2 - RCDATA",
+              "RelativeToolTip": "db2app64.dll - 2 - RCDATA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:19:11.48Z",
+              "EditorCaption": " - 2 - RCDATA"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IBMOSauthclient64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclient64.dll",
+              "RelativeDocumentMoniker": "IBMOSauthclient64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclient64.dll",
+              "RelativeToolTip": "IBMOSauthclient64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:56:21.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IBMOSauthclientTwoPart64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclientTwoPart64.dll",
+              "RelativeDocumentMoniker": "IBMOSauthclientTwoPart64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMOSauthclientTwoPart64.dll",
+              "RelativeToolTip": "IBMOSauthclientTwoPart64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:55:53.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IBMLDAPauthclient64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMLDAPauthclient64.dll",
+              "RelativeDocumentMoniker": "IBMLDAPauthclient64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMLDAPauthclient64.dll",
+              "RelativeToolTip": "IBMLDAPauthclient64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:55:30.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IBMkrb564.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb564.dll",
+              "RelativeDocumentMoniker": "IBMkrb564.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb564.dll",
+              "RelativeToolTip": "IBMkrb564.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:55:08.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IBMkrb5TwoPart64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb5TwoPart64.dll",
+              "RelativeDocumentMoniker": "IBMkrb5TwoPart64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMkrb5TwoPart64.dll",
+              "RelativeToolTip": "IBMkrb5TwoPart64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:54:45.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IBMIAMauth64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMIAMauth64.dll",
+              "RelativeDocumentMoniker": "IBMIAMauth64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\IBMIAMauth64.dll",
+              "RelativeToolTip": "IBMIAMauth64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:54:11.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "db2trcd64.exe",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcd64.exe",
+              "RelativeDocumentMoniker": "db2trcd64.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcd64.exe",
+              "RelativeToolTip": "db2trcd64.exe",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T09:52:49.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "db2trcapi64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcapi64.dll",
+              "RelativeDocumentMoniker": "db2trcapi64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trcapi64.dll",
+              "RelativeToolTip": "db2trcapi64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T09:52:31.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "db2trc.exe",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trc.exe",
+              "RelativeDocumentMoniker": "db2trc.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2trc.exe",
+              "RelativeToolTip": "db2trc.exe",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T09:52:09.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "db2support.exe",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2support.exe",
+              "RelativeDocumentMoniker": "db2support.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2support.exe",
+              "RelativeToolTip": "db2support.exe",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T09:51:45.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "db2osse64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2osse64.dll",
+              "RelativeDocumentMoniker": "db2osse64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2osse64.dll",
+              "RelativeToolTip": "db2osse64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:32:45.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "db2level.exe",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2level.exe",
+              "RelativeDocumentMoniker": "db2level.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2level.exe",
+              "RelativeToolTip": "db2level.exe",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T07:32:26.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "db2ldap64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldap64.dll",
+              "RelativeDocumentMoniker": "db2ldap64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldap64.dll",
+              "RelativeToolTip": "db2ldap64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:30:30.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "db2ldapm64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldapm64.dll",
+              "RelativeDocumentMoniker": "db2ldapm64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2ldapm64.dll",
+              "RelativeToolTip": "db2ldapm64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:29:57.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "db2drdat.exe",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2drdat.exe",
+              "RelativeDocumentMoniker": "db2drdat.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2drdat.exe",
+              "RelativeToolTip": "db2drdat.exe",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T07:29:35.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "db2diag.exe",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2diag.exe",
+              "RelativeDocumentMoniker": "db2diag.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2diag.exe",
+              "RelativeToolTip": "db2diag.exe",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T07:29:12.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "db2cli64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli64.dll",
+              "RelativeDocumentMoniker": "db2cli64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli64.dll",
+              "RelativeToolTip": "db2cli64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:28:46.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "db2clixml4c64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2clixml4c64.dll",
+              "RelativeDocumentMoniker": "db2clixml4c64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2clixml4c64.dll",
+              "RelativeToolTip": "db2clixml4c64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:28:20.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "db2cli.exe",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli.exe",
+              "RelativeDocumentMoniker": "db2cli.exe",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2cli.exe",
+              "RelativeToolTip": "db2cli.exe",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
+              "WhenOpened": "2024-03-15T07:24:54.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "db2app64.dll",
+              "DocumentMoniker": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2app64.dll",
+              "RelativeDocumentMoniker": "db2app64.dll",
+              "ToolTip": "C:\\V11.5.9.0CliDirver\\SB39830\\special_39830_v11.5.9_ntx64_odbc_cli\\clidriver\\bin\\db2app64.dll",
+              "RelativeToolTip": "db2app64.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2024-03-15T07:19:04.215Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5da8d69b-058a-4294-a87a-f4f7ae2983b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{5da8d69b-058a-4294-a87a-f4f7ae2983b3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

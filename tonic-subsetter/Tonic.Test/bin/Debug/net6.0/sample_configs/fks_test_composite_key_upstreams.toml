@@ -1,0 +1,8 @@
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost_1"
+ForeignKeyTable = "TEST_UPSTREAM_TABLE"
+ForeignKeyColumn = ["COL_0", "COL_1"]
+PrimaryKeyHostCategory = "OtherHost_0"
+PrimaryKeyTable = "TABLE_0"
+PrimaryKeyColumn = ["ID", "STRING"]
+IsPrincipal = true

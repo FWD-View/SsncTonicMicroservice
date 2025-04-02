@@ -266,6 +266,7 @@ C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.AssemblyInfoInputs.cache
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.AssemblyInfo.cs
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.csproj.CoreCompileInputs.cache
+C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.sourcelink.json
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.dll
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\refint\Tonic.Common.dll
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.pdb

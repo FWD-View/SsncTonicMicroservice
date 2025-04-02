@@ -1,0 +1,5 @@
+[SubsetterOptions]
+QueryBatchSize = 150
+UploadParallelism = 10
+Debug = false
+NoDownstreamUnions = false

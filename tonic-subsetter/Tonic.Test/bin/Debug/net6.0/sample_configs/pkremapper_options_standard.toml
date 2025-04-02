@@ -1,0 +1,40 @@
+[TableCountOptions]
+Target = "Source"
+
+[PrimaryKeyRemapperOptions]
+CheckConfigOnly = false
+DebugLogging = false
+DryRun = false
+InsertUsersIntoLookup = true
+ReuseRows = true
+UploadParallelism = 20
+WriteIdsToFile = true
+
+[PrimaryKeyRemapperOptions.Database]
+Database = "tonicmerger"
+Host = "localhost"
+Password = "example"
+Port = 3306
+User = "root"
+Table = "ordered_row_keys"
+
+[UsersTable]
+HostCategory = "TestHost"
+TableName = "target"
+
+[[DuplicateImportsAllowedTables]]
+HostCategory = "Host"
+TableName = "TARGET"
+
+[[DuplicateImportsAllowedTables]]
+HostCategory = "OtherHost"
+TableName = "OTHER_TABLE"
+
+[RedactedLookupDestinationHost]
+HostCategory = "TestHost"
+Host = "localhost"
+Port = 1521
+User = "OUTPUT"
+Password = "password"
+Sid = "ORCLPDB1"
+Schema = "OUTPUT"

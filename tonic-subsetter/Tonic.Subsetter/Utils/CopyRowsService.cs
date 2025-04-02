@@ -49,7 +49,7 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
         var rowWriteQueue = new BlockingCollection<string[]>();
         var tempFilePath = Path.Combine(DBAbstractionLayer.SharedDirectory, $"tonic_subsetter_{RunId}");
 
-        var (destinationTableName, destinationColumns) = Utilities.SendTo0TableHack(table, columns);
+       // var (destinationTableName, destinationColumns) = Utilities.SendTo0TableHack(table, columns);
 
         var readTasks = SourceConnections.RunOnCategoryWithMultiplexedQueue(table.HostCategory,
             queriesQueue,
@@ -86,7 +86,8 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
         var isDb2 = SourceConnections.IsDB2(table.HostCategory);
         var writeTask = isDb2 ? Utilities.TaskForQueue(csvQueue, () => WriteRowsToCsv(table, tempFilePath, rowWriteQueue, csvQueue, "DB2")) : Utilities.TaskForQueue(csvQueue, () => WriteRowsToCsv(table, tempFilePath, rowWriteQueue, csvQueue));
         UploadFile(table, tempFilePath, csvQueue);
-        var uploadTasks = UploadSubsetRows(table, isIotTable, csvQueue, destinationTableName, destinationColumns, isDb2);
+        //var uploadTasks = UploadSubsetRows(table, isIotTable, csvQueue, destinationTableName, destinationColumns, isDb2);
+        var uploadTasks = UploadSubsetRows(table, isIotTable, csvQueue, table.TableName, columns, isDb2);
 
         return uploadTasks.Append(readCompleteTask).Append(writeTask).Append(cacheTask).ToArray();
     }
@@ -304,7 +305,7 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
     public static void WriteRowsToCsv(Table table, string tempFilePath, BlockingCollection<string[]> rowWriteQueue,
         BlockingCollection<string> csvQueue, string dbType, int batchRowCountLimit = DBAbstractionLayer.CsvBatchSize)
     {
-        var baseFileName = Path.Combine(tempFilePath, Path.GetRandomFileName()+ "_"+table.TableName);
+        var baseFileName = Path.Combine(tempFilePath, "AR.I02.TONIC."+DateTime.UtcNow.ToString("yyMMdd.HHmmss") + "."+table.TableName);
         var writer = Utilities.OpenTsvFile(baseFileName + ".csv", table.TableName);
         var count = 0L;
         var c = dbType;
@@ -314,12 +315,12 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
                                                              .Select(i => row[i].ToString()));
                 writer.WriteLine(abc);            
             count += 1;
-            if (count < batchRowCountLimit) continue;
-            count = 0;
-            writer.Dispose();
-            csvQueue.Add(baseFileName);
-            baseFileName = Path.Combine(tempFilePath, Path.GetRandomFileName() + "_" + table.TableName);
-            writer = Utilities.OpenTsvFile(baseFileName + ".csv", table.TableName);
+            //if (count < batchRowCountLimit) continue;
+            //count = 0;
+            //writer.Dispose();
+            //csvQueue.Add(baseFileName);
+            //baseFileName = Path.Combine(tempFilePath, Path.GetRandomFileName() + "_" + table.TableName);
+            //writer = Utilities.OpenTsvFile(baseFileName + ".csv", table.TableName);
         }
 
         writer.Dispose();

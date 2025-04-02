@@ -1,0 +1,72 @@
+[[SourceHost]]
+HostCategory = "TestHost"
+Host = "localhost"
+Port = 1521
+User = "tonic"
+Password = "password"
+Sid = "ORCLPDB1"
+Schema = "TONIC"
+
+[[DestinationHost]]
+HostCategory = "TestHost"
+Host = "localhost"
+Port = 1521
+User = "tonic"
+Password = "password"
+Sid = "ORCLPDB1"
+Schema = "OUTPUT"
+
+[[SourceHost]]
+HostCategory = "OtherHost"
+Host = "localhost"
+Port = 1521
+User = "tonic"
+Password = "password"
+Sid = "ORCLPDB1"
+Schema = "TONIC"
+
+[[DestinationHost]]
+HostCategory = "OtherHost"
+Host = "localhost"
+Port = 1521
+User = "tonic"
+Password = "password"
+Sid = "ORCLPDB1"
+Schema = "OUTPUT"
+
+[[SourceHost]]
+HostCategory = "OtherHost_1"
+Host = "localhost"
+Port = 1521
+User = "tonic"
+Password = "password"
+Sid = "ORCLPDB1"
+Schema = "TONIC"
+
+[[DestinationHost]]
+HostCategory = "OtherHost_1"
+Host = "localhost"
+Port = 1521
+User = "tonic"
+Password = "password"
+Sid = "ORCLPDB1"
+Schema = "OUTPUT"
+
+[[SourceHost]]
+HostCategory = "OtherHost2"
+Host = "localhost"
+Port = 1521
+User = "tonic"
+Password = "password"
+Sid = "ORCLPDB1"
+Schema = "TONIC"
+
+[[DestinationHost]]
+HostCategory = "OtherHost2"
+Host = "localhost"
+Port = 1521
+User = "tonic"
+Password = "password"
+Sid = "ORCLPDB1"
+Schema = "OUTPUT"
+

@@ -32,6 +32,7 @@ public static class Utilities
             if (t.IsFaulted && t.Exception != null) throw t.Exception;
         });
 
+    /* NOTE: This is not relevant for working w/ DB2
     public static (string, IList<Column>) SendTo0TableHack(Table table, IList<Column>? columns = null)
     {
         //
@@ -48,6 +49,7 @@ public static class Utilities
             : columns;
         return (table0, columns0);
     }
+    */
 
     public static int FindIndex<T>(this IList<T> source, Predicate<T> match)
     {

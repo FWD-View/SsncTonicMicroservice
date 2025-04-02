@@ -34,7 +34,7 @@ namespace Tonic.Common.AWSHelper
                 var putRequest = new PutObjectRequest
                 {
                     BucketName = bucketName,
-                    Key = $"{DateTime.UtcNow.ToString("yyyy-MM-dd")}/{tableName}.csv",
+                    Key = $"{DateTime.UtcNow.ToString("yyyy-MM-dd")}/AR.I02.TONIC.{DateTime.UtcNow.ToString("yyMMdd.HHmmss")}.{tableName}.csv",
                     FilePath = $"{filePath}.csv",
                     ContentType = "text/csv",
                     ChecksumSHA256= ChecksumAlgorithm.SHA256

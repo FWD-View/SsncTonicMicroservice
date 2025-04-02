@@ -33,6 +33,7 @@ public partial record DownstreamAction(ISubsetConfig Config, PrimaryKeySet Prima
         foreach (var (category, host) in destConnections)
         {
             mappings.TryAdd(category, host.Configuration.Schema);
+            Log.Information("Created mapping for category {Category} to {Schema}", category, host.Configuration.Schema);
         }
 
         return mappings;
@@ -231,13 +232,13 @@ public partial record DownstreamAction
         var prefixedColumns =
             pkCols.Select<string, (string Left, string Right)>(c => ($"l.{c}", $"r.{c}")).ToList();
 
-        var (table0, _) = Utilities.SendTo0TableHack(table);
+        //var (table0, _) = Utilities.SendTo0TableHack(table);
         var hasSchemaOverride = SchemaOverride.ShouldOverrideTable(table, schemaOverrides);
         var schemaToken = hasSchemaOverride
             ? SchemaOverride.CreateOverrideToken(table.TableName)
             : Constants.TonicSchemaToken;
         var parentSelect =
-            $"SELECT {string.Join(", ", pkCols)}, 1 AS null_check FROM {schemaToken}.{table0}";
+            $"SELECT {string.Join(", ", pkCols)}, 1 AS null_check FROM {schemaToken}.{table}";
         var targetColumnClause =
             string.Join(" AND ", prefixedColumns.Select((tuple) => $"{tuple.Left} = {tuple.Right}"));
         var primaryKeyNullCheck = string.Join(" AND ",
@@ -301,8 +302,8 @@ WHERE r.null_check IS NULL AND {primaryKeyNullCheck}
                 });
             var columnSelect = string.Join(", ", columnsRenamed);
             var table = new Table(fk.ForeignKeyHostCategory, fk.ForeignKeyTable, fk.Grouped);
-            var (table0, _) = Utilities.SendTo0TableHack(table);
+            //var (table0, _) = Utilities.SendTo0TableHack(table);
             return
-                $"SELECT {columnSelect} FROM {categoryToSchemaMappings[table.HostCategory]}.{table0}";
+                $"SELECT {columnSelect} FROM {categoryToSchemaMappings[table.HostCategory]}.{table.TableName}";
         }).ToArray();
 }
