@@ -1,0 +1,13 @@
+[[HostSchemaOverride]]
+HostCategory = "TestHost"
+Sid = "NEW_SID"
+Host = "localhost2"
+Schema = "OVERRIDE_SCHEMA"
+Table = "MULTI_PK_TEST_TABLE"
+
+[[HostSchemaOverride]]
+HostCategory = "TestHost"
+Sid = "NEW_SID"
+Host = "localhost2"
+Schema = "OVERRIDE_SCHEMA"
+Table = "TEST_UPSTREAM_TABLE"

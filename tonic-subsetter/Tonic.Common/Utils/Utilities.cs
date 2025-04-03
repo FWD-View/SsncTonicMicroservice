@@ -32,6 +32,7 @@ public static class Utilities
             if (t.IsFaulted && t.Exception != null) throw t.Exception;
         });
 
+    /* NOTE: This is not relevant for working w/ DB2
     public static (string, IList<Column>) SendTo0TableHack(Table table, IList<Column>? columns = null)
     {
         //
@@ -48,6 +49,7 @@ public static class Utilities
             : columns;
         return (table0, columns0);
     }
+    */
 
     public static int FindIndex<T>(this IList<T> source, Predicate<T> match)
     {
@@ -176,7 +178,7 @@ public static class Utilities
     }
 
     public static (string, Dictionary<string, string>) KeyClause(IList<string> keyColumns,
-        IList<string[]> filterValues, int keyClauseBatchSize = 999)
+        IList<string[]> filterValues, int upstream = 0, int keyClauseBatchSize = 999)
     {
         if (keyColumns == null || filterValues == null)
         {
@@ -202,7 +204,7 @@ public static class Utilities
             .ToDictionary(tuple => tuple.First, tuple => tuple.Second);
 
         var paramClauses = new List<string>();
-        for (var i = 1; i < paramCount; i += keyColumns.Count)
+        for (var i = upstream; i < paramCount; i += keyColumns.Count)
         {
             var curCount = i;
             paramClauses.Add(keyColumns.Count == 1

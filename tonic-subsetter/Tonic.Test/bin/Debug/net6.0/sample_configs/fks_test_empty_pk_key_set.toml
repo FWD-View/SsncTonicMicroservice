@@ -1,0 +1,44 @@
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "TEST_TABLE"
+ForeignKeyColumn = ["LISTING_ID", "B"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "PRIMARY_TABLE"
+PrimaryKeyColumn = ["ID","SELLER"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "TEST_TABLE_1"
+ForeignKeyColumn = ["B", "C"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "TEST_TABLE"
+PrimaryKeyColumn = ["B", "C"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "TEST_TABLE_2"
+ForeignKeyColumn = ["B", "C"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "TEST_TABLE"
+PrimaryKeyColumn = ["B", "C"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "TEST_TABLE_3"
+ForeignKeyColumn = ["A", "B"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "TEST_TABLE"
+PrimaryKeyColumn = ["A", "B"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost2"
+ForeignKeyTable = "TEST_TABLE_4"
+ForeignKeyColumn = ["B"]
+PrimaryKeyHostCategory = "OtherHost"
+PrimaryKeyTable = "TEST_TABLE"
+PrimaryKeyColumn = ["B"]
+IsPrincipal = true

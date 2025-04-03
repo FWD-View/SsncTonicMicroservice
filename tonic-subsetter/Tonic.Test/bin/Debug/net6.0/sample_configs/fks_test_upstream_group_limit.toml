@@ -1,0 +1,133 @@
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "OTHER_TABLE_1"
+ForeignKeyColumn = ["ID_1", "ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_1", "ID_2"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "OTHER_TABLE_2"
+ForeignKeyColumn = ["ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_2"]
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "OTHER_TABLE_3"
+ForeignKeyColumn = ["ID_1", "ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_1", "ID_2"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost_1"
+ForeignKeyTable = "OTHER_TABLE_4"
+ForeignKeyColumn = ["ID_1", "ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_1", "ID_2"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost_2"
+ForeignKeyTable = "OTHER_TABLE_5"
+ForeignKeyColumn = ["ID_1","ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_1", "ID_2"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "DisputeHost"
+ForeignKeyTable = "OTHER_TABLE_6"
+ForeignKeyColumn = ["ID_1","ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_1", "ID_2"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "TestHost"
+ForeignKeyTable = "SELF_REF_TESTTABLE"
+ForeignKeyColumn = ["ID_1", "ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_1", "ID_2"]
+IsPrincipal = true
+[ForeignKey.ForeignKeyColumnCastType]
+"ID_1" = "NUMBER"
+"ID_2" = "NUMBER"
+
+[[UpstreamGroupLimit]]
+HostCategory = "TestHost"
+Table = "TESTTABLE"
+GroupBy = "ID_1"
+OrderBy = "CREATED"
+Limit = 100
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "TestHost"
+ForeignKeyTable = "TESTTABLE"
+ForeignKeyColumn = ["ID_1"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "PRIMARY_TABLE_2"
+PrimaryKeyColumn = ["ID"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "TestHost"
+ForeignKeyTable = "TESTTABLE"
+ForeignKeyColumn = ["U_ID"]
+PrimaryKeyHostCategory = "UserHost"
+PrimaryKeyTable = "PRIMARY_TABLE_1"
+PrimaryKeyColumn = ["ID"]
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "OTHER_TABLE_7"
+ForeignKeyColumn = ["CHECKOUT_ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_2"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "TestHost"
+ForeignKeyTable = "OTHER_TABLE_8"
+ForeignKeyColumn = ["ID_1", "ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_1", "ID_2"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "TestHost"
+ForeignKeyTable = "OTHER_TABLE_9"
+ForeignKeyColumn = ["ID_1", "ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_1", "ID_2"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "UserHost"
+ForeignKeyTable = "OTHER_TABLE_10"
+ForeignKeyColumn = ["ID_1", "ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_1", "ID_2"]
+IsPrincipal = true
+
+[[ForeignKey]]
+ForeignKeyHostCategory = "OtherHost"
+ForeignKeyTable = "OTHER_TABLE_2"
+ForeignKeyColumn = ["ID_2"]
+PrimaryKeyHostCategory = "TestHost"
+PrimaryKeyTable = "TESTTABLE"
+PrimaryKeyColumn = ["ID_2"]
