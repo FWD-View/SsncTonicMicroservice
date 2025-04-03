@@ -1,7 +1,0 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0
-
-COPY . /resetschema/
-WORKDIR /resetschema/
-ENV TZ UTC
-
-CMD dotnet Tonic.ResetSchema.dll

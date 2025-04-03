@@ -2,7 +2,7 @@
   "profiles": {
     "Tonic.Subsetter": {
       "commandName": "Project",
-      "commandLineArgs": "C:\\Users\\vhogden\\Downloads\\ssc_tes_db2.toml"
+      "commandLineArgs": "C:\\apps\\tonic\\*.toml" 
     }
   }
 }
