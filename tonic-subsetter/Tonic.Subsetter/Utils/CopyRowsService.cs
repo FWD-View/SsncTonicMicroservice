@@ -85,18 +85,19 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
         // var writeTask = Utilities.TaskForQueue(csvQueue, () => WriteRowsToCsv(table, tempFilePath, rowWriteQueue, csvQueue));
         var isDb2 = SourceConnections.IsDB2(table.HostCategory);
         var writeTask = isDb2 ? Utilities.TaskForQueue(csvQueue, () => WriteRowsToCsv(table, tempFilePath, rowWriteQueue, csvQueue, "DB2")) : Utilities.TaskForQueue(csvQueue, () => WriteRowsToCsv(table, tempFilePath, rowWriteQueue, csvQueue));
-        UploadFile(table, tempFilePath, csvQueue);
+        var sid = SourceConnections.FindSid(table.HostCategory);
+        UploadFile(table, SourceConnections.FindSid(table.HostCategory), tempFilePath, csvQueue);
         //var uploadTasks = UploadSubsetRows(table, isIotTable, csvQueue, destinationTableName, destinationColumns, isDb2);
         var uploadTasks = UploadSubsetRows(table, isIotTable, csvQueue, table.TableName, columns, isDb2);
 
         return uploadTasks.Append(readCompleteTask).Append(writeTask).Append(cacheTask).ToArray();
     }
 
-    public void UploadFile(Table table, string tempFilePath, BlockingCollection<string> csvQueue)
+    public void UploadFile(Table table,string sid, string tempFilePath, BlockingCollection<string> csvQueue)
     {
         foreach (var baseFileName in csvQueue.GetConsumingEnumerable())
         {
-            var result = AWSClient.UploadFile(baseFileName, table.TableName, tempFilePath);
+            var result = AWSClient.UploadFile(baseFileName, sid, table, tempFilePath);
         }
     }
     public bool IsSchemaRestrictedTable(Table table, string hostSchemaName)
@@ -315,12 +316,6 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
                                                              .Select(i => row[i].ToString()));
                 writer.WriteLine(abc);            
             count += 1;
-            //if (count < batchRowCountLimit) continue;
-            //count = 0;
-            //writer.Dispose();
-            //csvQueue.Add(baseFileName);
-            //baseFileName = Path.Combine(tempFilePath, Path.GetRandomFileName() + "_" + table.TableName);
-            //writer = Utilities.OpenTsvFile(baseFileName + ".csv", table.TableName);
         }
 
         writer.Dispose();

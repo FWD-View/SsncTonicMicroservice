@@ -26,6 +26,7 @@ public interface IHostsService : IEnumerable<(string, IHost)>
     public void RunOnCanDbLinkHostsAndWait(Action<string, IHost> action);
 
     public bool IsDB2(string hostCategory);
+    public string FindSid(string hostCategory);
 }
 
 public class HostsService : IHostsService
@@ -114,6 +115,10 @@ public class HostsService : IHostsService
     {
        
        return _hosts[hostCategory].Any(x => x.Configuration.DbType== DatabaseType.DB2.ToString());
+    }
+    public string FindSid(string hostCategory)
+    {
+        return _hosts[hostCategory].Select(x => x.Configuration.Sid).FirstOrDefault();
     }
 
     public void RunOnCanDbLinkHostsAndWait(Action<string, IHost> action)

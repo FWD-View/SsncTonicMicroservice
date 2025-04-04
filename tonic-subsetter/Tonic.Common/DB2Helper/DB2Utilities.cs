@@ -38,7 +38,7 @@ public static class DB2Utilities
 
     public static List<Column> GetColumns(IHost host)
     {
-       var query= $@"SELECT
+        var query = $@"SELECT
     cols.TBNAME AS ""table_name"",
     cols.NAME AS ""column_name"",
     cols.TYPENAME AS ""data_type_of_column"",
@@ -63,8 +63,8 @@ GROUP BY
     cols.NAME,
     cols.TYPENAME,
     cols.LENGTH,
-    cols.NULLS
-ORDER BY cols.TBNAME, cols.NAME;";
+    cols.NULLS;";
+//ORDER BY cols.TBNAME, cols.NAME;";
         using var reader = host.ExecuteQuery(query);
         var columns = new List<Column>();
         var hostCategory = host.Configuration.HostCategory;
