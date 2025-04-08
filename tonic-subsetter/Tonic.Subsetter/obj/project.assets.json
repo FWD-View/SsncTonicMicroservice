@@ -4537,8 +4537,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vhogden\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -4546,13 +4545,12 @@
       "projectUniqueName": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Subsetter\\Tonic.Subsetter.csproj",
       "projectName": "Tonic.Subsetter",
       "projectPath": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Subsetter\\Tonic.Subsetter.csproj",
-      "packagesPath": "C:\\Users\\vhogden\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages",
       "outputPath": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Subsetter\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
+        "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\NuGet.Config",
+        "C:\\Users\\vhogden\\Downloads\\NuGet.Config",
         "C:\\Users\\vhogden\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -4561,7 +4559,6 @@
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
