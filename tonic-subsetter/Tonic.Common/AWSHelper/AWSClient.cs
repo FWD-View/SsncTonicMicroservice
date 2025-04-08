@@ -18,7 +18,7 @@ namespace Tonic.Common.AWSHelper
         //private static IAmazonS3 s3Client;
 
 
-        public static async Task UploadFile(string filePath,string sid, Table table, string path)
+        public static async Task UploadFile(string filePath,string sid, string schema,Table table, string path)
         {
             var credentials = new BasicAWSCredentials("PaOBKvElrk@deidentification-stage@pharmacy","8lDzISkPQ8+I4Cy0NV7nB7k+rQ/IuPBCksYQJfZp");
 
@@ -35,7 +35,7 @@ namespace Tonic.Common.AWSHelper
                 var putRequest = new PutObjectRequest
                 {
                     BucketName = bucketName,
-                    Key = $"{DateTime.UtcNow.ToString("yyyy-MM-dd")}/AR.I02.TONIC.{table.HostCategory.Substring(3,3)}.{sid}.D{DateTime.UtcNow.ToString("yyMMdd")}.T{DateTime.UtcNow.ToString("HHmm")}.{table.TableName}.csv",
+                    Key = $"{DateTime.UtcNow.ToString("yyyy-MM-dd")}/AR.I00.TONIC.{schema.Substring(3,3)}.{sid}.{table.TableName}.csv",
                     FilePath = $"{filePath}.csv",
                     ContentType = "text/csv",
                     ChecksumSHA256= ChecksumAlgorithm.SHA256

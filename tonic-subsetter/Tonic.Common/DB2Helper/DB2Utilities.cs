@@ -63,8 +63,9 @@ GROUP BY
     cols.NAME,
     cols.TYPENAME,
     cols.LENGTH,
-    cols.NULLS;";
-//ORDER BY cols.TBNAME, cols.NAME;";
+    cols.NULLS,
+        cols.COLNO
+        ORDER BY cols.COLNO;";
         using var reader = host.ExecuteQuery(query);
         var columns = new List<Column>();
         var hostCategory = host.Configuration.HostCategory;

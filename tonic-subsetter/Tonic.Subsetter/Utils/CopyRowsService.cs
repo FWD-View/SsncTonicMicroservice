@@ -85,19 +85,19 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
         // var writeTask = Utilities.TaskForQueue(csvQueue, () => WriteRowsToCsv(table, tempFilePath, rowWriteQueue, csvQueue));
         var isDb2 = SourceConnections.IsDB2(table.HostCategory);
         var writeTask = isDb2 ? Utilities.TaskForQueue(csvQueue, () => WriteRowsToCsv(table, tempFilePath, rowWriteQueue, csvQueue, "DB2")) : Utilities.TaskForQueue(csvQueue, () => WriteRowsToCsv(table, tempFilePath, rowWriteQueue, csvQueue));
-        var sid = SourceConnections.FindSid(table.HostCategory);
-        UploadFile(table, SourceConnections.FindSid(table.HostCategory), tempFilePath, csvQueue);
+        var destHost = DestConnections.FindHost(table.HostCategory);
+        UploadFile(table,DestConnections.FindHost(table.HostCategory), SourceConnections.FindSid(table.HostCategory), tempFilePath, csvQueue);
         //var uploadTasks = UploadSubsetRows(table, isIotTable, csvQueue, destinationTableName, destinationColumns, isDb2);
         var uploadTasks = UploadSubsetRows(table, isIotTable, csvQueue, table.TableName, columns, isDb2);
 
         return uploadTasks.Append(readCompleteTask).Append(writeTask).Append(cacheTask).ToArray();
     }
 
-    public void UploadFile(Table table,string sid, string tempFilePath, BlockingCollection<string> csvQueue)
+    public void UploadFile(Table table, string schema,string sid, string tempFilePath, BlockingCollection<string> csvQueue)
     {
         foreach (var baseFileName in csvQueue.GetConsumingEnumerable())
         {
-            var result = AWSClient.UploadFile(baseFileName, sid, table, tempFilePath);
+            var result = AWSClient.UploadFile(baseFileName, sid, schema,table, tempFilePath);
         }
     }
     public bool IsSchemaRestrictedTable(Table table, string hostSchemaName)
