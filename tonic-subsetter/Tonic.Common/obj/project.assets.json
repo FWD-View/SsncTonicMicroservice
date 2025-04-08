@@ -444,7 +444,7 @@
           }
         }
       },
-      "Net.IBM.Data.Db2/6.0.0.500": {
+      "Net.IBM.Data.Db2/6.0.0.300": {
         "type": "package",
         "compile": {
           "lib/net6.0/IBM.Data.Db2.dll": {}
@@ -454,6 +454,21 @@
         },
         "build": {
           "buildTransitive/Net.IBM.Data.Db2.targets": {}
+        }
+      },
+      "Net.IBM.Data.Db2-lnx/6.0.0.500": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.Loader": "4.3.0"
+        },
+        "compile": {
+          "lib/net6.0/IBM.Data.Db2.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/IBM.Data.Db2.dll": {}
+        },
+        "build": {
+          "buildTransitive/Net.IBM.Data.Db2-lnx.targets": {}
         }
       },
       "Nett/0.15.0": {
@@ -986,6 +1001,22 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Runtime.Loader/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.Loader.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Runtime.Loader.dll": {}
         }
       },
       "System.Security.AccessControl/6.0.0": {
@@ -1693,21 +1724,15 @@
         "runtimes/win-x86/native/libMonoPosixHelper.dll"
       ]
     },
-    "Net.IBM.Data.Db2/6.0.0.500": {
-      "sha512": "xa2QKTF+om3tC/gOwVJV6ZdFo7SxayCKlJJ1L7iLkGT0ltrO44+Xb1iNhv0swFVT2S/zYXW89UCnZBjucPat4g==",
+    "Net.IBM.Data.Db2/6.0.0.300": {
+      "sha512": "u3RGHwbLx+uYKBxEfXTV5s2I5mEFAnbtXlqzbeSKc7rqzr68St3tAOwkg3wDGKZLFLCCCZ1d/ltIyf8YQd2wDA==",
       "type": "package",
-      "path": "net.ibm.data.db2/6.0.0.500",
+      "path": "net.ibm.data.db2/6.0.0.300",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Lic_en.txt",
         "buildTransitive/Net.IBM.Data.Db2.targets",
-        "buildTransitive/clidriver/bin/.vs/VSWorkspaceState.json",
-        "buildTransitive/clidriver/bin/.vs/bin/FileContentIndex/d6a7eb84-eb89-4460-9f46-c59de550f78c.vsidx",
-        "buildTransitive/clidriver/bin/.vs/bin/v17/DocumentLayout.json",
-        "buildTransitive/clidriver/bin/.vs/bin/v17/TestStore/0/000.testlog",
-        "buildTransitive/clidriver/bin/.vs/bin/v17/TestStore/0/testlog.manifest",
-        "buildTransitive/clidriver/bin/.vs/slnx.sqlite",
         "buildTransitive/clidriver/bin/DB2xml4c_cli64_5_8.dll",
         "buildTransitive/clidriver/bin/DB2xml4c_cli64_5_8.dll.2.manifest",
         "buildTransitive/clidriver/bin/IBM.DB2.APP64.manifest",
@@ -1821,8 +1846,119 @@
         "buildTransitive/clidriver/msg/en_US/db2supp.mo",
         "buildTransitive/clidriver/properties/version/ibm.com_IBM_Data_Server_Driver_for_ODBC_and_CLI-11.5.0.swidtag",
         "lib/net6.0/IBM.Data.Db2.dll",
-        "net.ibm.data.db2.6.0.0.500.nupkg.sha512",
+        "net.ibm.data.db2.6.0.0.300.nupkg.sha512",
         "net.ibm.data.db2.nuspec",
+        "notices.txt"
+      ]
+    },
+    "Net.IBM.Data.Db2-lnx/6.0.0.500": {
+      "sha512": "0AmCGw3ippDaPrtxaCd9ylXkZa0uZZCEWB/SZAV6mVIquy5IRmropu/xY9WhAP0lmF/z2MjJ4o1wJko5Vlt+cQ==",
+      "type": "package",
+      "path": "net.ibm.data.db2-lnx/6.0.0.500",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Lic_en.txt",
+        "buildTransitive/Net.IBM.Data.Db2-lnx.targets",
+        "buildTransitive/clidriver/Readme.txt",
+        "buildTransitive/clidriver/adm/db2trc",
+        "buildTransitive/clidriver/bin/db2cli",
+        "buildTransitive/clidriver/bin/db2level",
+        "buildTransitive/clidriver/bnd/db2ajgrt.bnd",
+        "buildTransitive/clidriver/bnd/db2cli.bnd",
+        "buildTransitive/clidriver/bnd/db2cli.lst",
+        "buildTransitive/clidriver/bnd/db2clipk.bnd",
+        "buildTransitive/clidriver/bnd/db2clist.bnd",
+        "buildTransitive/clidriver/bnd/db2spcdb.bnd",
+        "buildTransitive/clidriver/cfg/DigiCertGlobalRootCA.arm",
+        "buildTransitive/clidriver/cfg/db2dsdriver.cfg.sample",
+        "buildTransitive/clidriver/cfg/db2dsdriver.xsd",
+        "buildTransitive/clidriver/cfgcache/conlic.bin",
+        "buildTransitive/clidriver/conv/alt/04370923.cnv",
+        "buildTransitive/clidriver/conv/alt/08500923.cnv",
+        "buildTransitive/clidriver/conv/alt/08501252.cnv",
+        "buildTransitive/clidriver/conv/alt/08600923.cnv",
+        "buildTransitive/clidriver/conv/alt/08630923.cnv",
+        "buildTransitive/clidriver/conv/alt/09230437.cnv",
+        "buildTransitive/clidriver/conv/alt/09230850.cnv",
+        "buildTransitive/clidriver/conv/alt/09230860.cnv",
+        "buildTransitive/clidriver/conv/alt/09231043.cnv",
+        "buildTransitive/clidriver/conv/alt/09231051.cnv",
+        "buildTransitive/clidriver/conv/alt/09231114.cnv",
+        "buildTransitive/clidriver/conv/alt/09231208.cnv",
+        "buildTransitive/clidriver/conv/alt/09231252.cnv",
+        "buildTransitive/clidriver/conv/alt/09231275.cnv",
+        "buildTransitive/clidriver/conv/alt/09241252.cnv",
+        "buildTransitive/clidriver/conv/alt/09370950.cnv",
+        "buildTransitive/clidriver/conv/alt/10430923.cnv",
+        "buildTransitive/clidriver/conv/alt/10510923.cnv",
+        "buildTransitive/clidriver/conv/alt/11140923.cnv",
+        "buildTransitive/clidriver/conv/alt/12080923.cnv",
+        "buildTransitive/clidriver/conv/alt/12520850.cnv",
+        "buildTransitive/clidriver/conv/alt/12520923.cnv",
+        "buildTransitive/clidriver/conv/alt/12750923.cnv",
+        "buildTransitive/clidriver/conv/alt/1388ucs2.cnv",
+        "buildTransitive/clidriver/conv/alt/IBM00850.ucs",
+        "buildTransitive/clidriver/conv/alt/IBM00923.ucs",
+        "buildTransitive/clidriver/conv/alt/IBM01252.ucs",
+        "buildTransitive/clidriver/conv/ms/0930ucs2.cnv",
+        "buildTransitive/clidriver/conv/ms/0939ucs2.cnv",
+        "buildTransitive/clidriver/conv/ms/0943ucs2.cnv",
+        "buildTransitive/clidriver/conv/ms/0954ucs2.cnv",
+        "buildTransitive/clidriver/conv/ms/1390ucs2.cnv",
+        "buildTransitive/clidriver/conv/ms/1399ucs2.cnv",
+        "buildTransitive/clidriver/conv/ms/5039ucs2.cnv",
+        "buildTransitive/clidriver/conv/ms/ucs20943.cnv",
+        "buildTransitive/clidriver/db2dump/.keep.odbc_cli",
+        "buildTransitive/clidriver/lib/icc/C/icc/ReadMe.txt",
+        "buildTransitive/clidriver/lib/icc/C/icc/icclib/ICCSIG.txt",
+        "buildTransitive/clidriver/lib/icc/C/icc/icclib/libicclib084.so",
+        "buildTransitive/clidriver/lib/icc/N/icc/ReadMe.txt",
+        "buildTransitive/clidriver/lib/icc/N/icc/icclib/ICCSIG.txt",
+        "buildTransitive/clidriver/lib/icc/N/icc/icclib/libicclib085.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8acmeidup_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8cms_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8dbfl_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8drld_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8iccs_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8kicc_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8km2_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8km_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8ldap_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8p11_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8ssl_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8sys_64.so",
+        "buildTransitive/clidriver/lib/icc/libgsk8valn_64.so",
+        "buildTransitive/clidriver/lib/libDB2xml4c.so",
+        "buildTransitive/clidriver/lib/libDB2xml4c.so.58",
+        "buildTransitive/clidriver/lib/libdb2.so",
+        "buildTransitive/clidriver/lib/libdb2.so.1",
+        "buildTransitive/clidriver/lib/libdb2clixml4c.so",
+        "buildTransitive/clidriver/license/UNIX/odbc_LI_en",
+        "buildTransitive/clidriver/license/odbc_REDIST.txt",
+        "buildTransitive/clidriver/license/odbc_notices.txt",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2adm.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2admh.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2caem.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2cklog.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2cli.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2clia1.lst",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2clias.lst",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2clit.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2clp.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2clp2.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2fodc.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2sql.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2sqlh.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2stt.mo",
+        "buildTransitive/clidriver/msg/en_US.iso88591/db2supp.mo",
+        "buildTransitive/clidriver/properties/version/ibm.com_IBM_Data_Server_Driver_for_ODBC_and_CLI-11.5.0.swidtag",
+        "buildTransitive/clidriver/security64/plugin/IBM/client/IBMIAMauth.so",
+        "buildTransitive/clidriver/security64/plugin/IBM/client/IBMkrb5.so",
+        "buildTransitive/clidriver/security64/plugin/IBM/client/IBMkrb5.so.1",
+        "lib/net6.0/IBM.Data.Db2.dll",
+        "net.ibm.data.db2-lnx.6.0.0.500.nupkg.sha512",
+        "net.ibm.data.db2-lnx.nuspec",
         "notices.txt"
       ]
     },
@@ -3010,6 +3146,38 @@
         "system.runtime.interopservices.runtimeinformation.nuspec"
       ]
     },
+    "System.Runtime.Loader/4.3.0": {
+      "sha512": "DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "type": "package",
+      "path": "system.runtime.loader/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/_._",
+        "lib/netstandard1.5/System.Runtime.Loader.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/netstandard1.5/System.Runtime.Loader.dll",
+        "ref/netstandard1.5/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/de/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/es/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/fr/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/it/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ja/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ko/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ru/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.Loader.xml",
+        "system.runtime.loader.4.3.0.nupkg.sha512",
+        "system.runtime.loader.nuspec"
+      ]
+    },
     "System.Security.AccessControl/6.0.0": {
       "sha512": "AUADIc0LIEQe7MzC+I0cl0rAT8RrTAKFHl53yHjEUzNVIaUlhFY11vc2ebiVJzVBuOzun6F7FBA+8KAbGTTedQ==",
       "type": "package",
@@ -3488,7 +3656,7 @@
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.Configuration.Binder >= 7.0.4",
       "Mono.Posix.NETStandard >= 1.0.0",
-      "Net.IBM.Data.Db2 >= 6.0.0.500",
+      "Net.IBM.Data.Db2-lnx >= 6.0.0.500",
       "Nett >= 0.15.0",
       "NodaTime.Serialization.SystemTextJson >= 1.0.0",
       "Oracle.ManagedDataAccess.Core >= 3.21.110",
@@ -3577,7 +3745,7 @@
             "target": "Package",
             "version": "[1.0.0, )"
           },
-          "Net.IBM.Data.Db2": {
+          "Net.IBM.Data.Db2-lnx": {
             "target": "Package",
             "version": "[6.0.0.500, )"
           },

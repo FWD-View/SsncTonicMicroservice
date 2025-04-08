@@ -78,7 +78,7 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
-            "Net.IBM.Data.Db2": {
+            "Net.IBM.Data.Db2-lnx": {
               "target": "Package",
               "version": "[6.0.0.500, )"
             },

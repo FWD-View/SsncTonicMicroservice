@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|c:\\users\\vhogden\\downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\tonic.common\\helpers\\logicalhost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|solutionrelative:tonic.common\\helpers\\logicalhost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|c:\\users\\vhogden\\downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\tonic.common\\db2helper\\db2utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|solutionrelative:tonic.common\\db2helper\\db2utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|c:\\users\\vhogden\\downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\tonic.common\\oraclehelper\\oracleutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|solutionrelative:tonic.common\\oraclehelper\\oracleutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|c:\\users\\vhogden\\downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\tonic.common\\awshelper\\awsclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|solutionrelative:tonic.common\\awshelper\\awsclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,6 +13,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{937C8DF9-9928-47F6-9DFB-8ED19A8F51E1}|Tonic.Subsetter\\Tonic.Subsetter.csproj|c:\\users\\vhogden\\downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\tonic.subsetter\\utils\\logicalhosts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{937C8DF9-9928-47F6-9DFB-8ED19A8F51E1}|Tonic.Subsetter\\Tonic.Subsetter.csproj|solutionrelative:tonic.subsetter\\utils\\logicalhosts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|c:\\users\\vhogden\\downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\tonic.common\\helpers\\logicalhost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|solutionrelative:tonic.common\\helpers\\logicalhost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|c:\\users\\vhogden\\downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\tonic.common\\db2helper\\db2utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|solutionrelative:tonic.common\\db2helper\\db2utilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|c:\\users\\vhogden\\downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\tonic.common\\oraclehelper\\oracleutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|solutionrelative:tonic.common\\oraclehelper\\oracleutilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFB4822E-F1C3-4393-8380-184547289126}|Tonic.Common\\Tonic.Common.csproj|c:\\users\\vhogden\\downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\tonic.common\\configs\\logicalhostconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -226,7 +226,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Document",
@@ -309,13 +309,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "LogicalHosts.cs",
               "DocumentMoniker": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Subsetter\\Utils\\LogicalHosts.cs",
               "RelativeDocumentMoniker": "Tonic.Subsetter\\Utils\\LogicalHosts.cs",
               "ToolTip": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Subsetter\\Utils\\LogicalHosts.cs",
               "RelativeToolTip": "Tonic.Subsetter\\Utils\\LogicalHosts.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAUwBwAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAjwH8AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T09:35:10.169Z",
               "IsPinned": true,
@@ -351,13 +351,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "DB2Utilities.cs",
               "DocumentMoniker": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\DB2Helper\\DB2Utilities.cs",
               "RelativeDocumentMoniker": "Tonic.Common\\DB2Helper\\DB2Utilities.cs",
               "ToolTip": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\DB2Helper\\DB2Utilities.cs",
               "RelativeToolTip": "Tonic.Common\\DB2Helper\\DB2Utilities.cs",
-              "ViewState": "AgIAADwAAACAZmZmZqYpwEMAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwD8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T12:06:20.657Z",
               "IsPinned": true,
@@ -365,41 +365,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OracleUtilities.cs",
-              "DocumentMoniker": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\OracleHelper\\OracleUtilities.cs",
-              "RelativeDocumentMoniker": "Tonic.Common\\OracleHelper\\OracleUtilities.cs",
-              "ToolTip": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\OracleHelper\\OracleUtilities.cs",
-              "RelativeToolTip": "Tonic.Common\\OracleHelper\\OracleUtilities.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAiwFAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T11:49:40.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "LogicalHost.cs",
               "DocumentMoniker": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\Helpers\\LogicalHost.cs",
               "RelativeDocumentMoniker": "Tonic.Common\\Helpers\\LogicalHost.cs",
               "ToolTip": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\Helpers\\LogicalHost.cs",
               "RelativeToolTip": "Tonic.Common\\Helpers\\LogicalHost.cs",
-              "ViewState": "AgIAAAYCAAAAAAAAAAArwBUCAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAA8CAAAAAAAAAAAswBgCAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T11:49:40.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AWSClient.cs",
-              "DocumentMoniker": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\AWSHelper\\AWSClient.cs",
-              "RelativeDocumentMoniker": "Tonic.Common\\AWSHelper\\AWSClient.cs",
-              "ToolTip": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\AWSHelper\\AWSClient.cs",
-              "RelativeToolTip": "Tonic.Common\\AWSHelper\\AWSClient.cs",
-              "ViewState": "AgIAABcAAABgMzMzMzMmwCEAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T16:19:06.74Z",
               "EditorCaption": ""
             },
             {
@@ -455,6 +429,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CopyRowsService.cs",
+              "DocumentMoniker": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Subsetter\\Utils\\CopyRowsService.cs",
+              "RelativeDocumentMoniker": "Tonic.Subsetter\\Utils\\CopyRowsService.cs",
+              "ToolTip": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Subsetter\\Utils\\CopyRowsService.cs",
+              "RelativeToolTip": "Tonic.Subsetter\\Utils\\CopyRowsService.cs",
+              "ViewState": "AgIAAFIAAACAmZmZmZn5v2MAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T15:56:41.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AWSClient.cs",
+              "DocumentMoniker": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\AWSHelper\\AWSClient.cs",
+              "RelativeDocumentMoniker": "Tonic.Common\\AWSHelper\\AWSClient.cs",
+              "ToolTip": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\AWSHelper\\AWSClient.cs*",
+              "RelativeToolTip": "Tonic.Common\\AWSHelper\\AWSClient.cs*",
+              "ViewState": "AgIAABsAAAAAAQAAAAAFwBQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T16:19:06.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OracleUtilities.cs",
+              "DocumentMoniker": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\OracleHelper\\OracleUtilities.cs",
+              "RelativeDocumentMoniker": "Tonic.Common\\OracleHelper\\OracleUtilities.cs",
+              "ToolTip": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\OracleHelper\\OracleUtilities.cs",
+              "RelativeToolTip": "Tonic.Common\\OracleHelper\\OracleUtilities.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAiwFAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T11:49:40.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "LogicalHostConfig.cs",
               "DocumentMoniker": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Common\\Configs\\LogicalHostConfig.cs",
@@ -464,19 +477,6 @@
               "ViewState": "AgIAABgAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T15:42:41.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CopyRowsService.cs",
-              "DocumentMoniker": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Subsetter\\Utils\\CopyRowsService.cs",
-              "RelativeDocumentMoniker": "Tonic.Subsetter\\Utils\\CopyRowsService.cs",
-              "ToolTip": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Subsetter\\Utils\\CopyRowsService.cs",
-              "RelativeToolTip": "Tonic.Subsetter\\Utils\\CopyRowsService.cs",
-              "ViewState": "AgIAAEcAAABAMzMzMxMwwFYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T15:56:41.258Z",
               "EditorCaption": ""
             },
             {
