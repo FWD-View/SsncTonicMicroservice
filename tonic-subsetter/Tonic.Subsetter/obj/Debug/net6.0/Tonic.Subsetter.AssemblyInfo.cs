@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tonic.Subsetter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75e3dd7d68c6c8f00307139b45aff2019e170fa1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c58181a288b998deee110a5bb2b6d3e6d9a402f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tonic.Subsetter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tonic.Subsetter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
