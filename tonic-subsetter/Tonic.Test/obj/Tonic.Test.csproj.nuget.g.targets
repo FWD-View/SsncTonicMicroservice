@@ -3,7 +3,6 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)\xunit.core\2.4.1\build\xunit.core.targets" Condition="Exists('$(NuGetPackageRoot)\xunit.core\2.4.1\build\xunit.core.targets')" />
     <Import Project="$(NuGetPackageRoot)\system.data.oledb\9.0.1\buildTransitive\netcoreapp2.0\System.Data.OleDb.targets" Condition="Exists('$(NuGetPackageRoot)\system.data.oledb\9.0.1\buildTransitive\netcoreapp2.0\System.Data.OleDb.targets')" />
-    <Import Project="$(NuGetPackageRoot)\net.ibm.data.db2-lnx\6.0.0.500\buildTransitive\Net.IBM.Data.Db2-lnx.targets" Condition="Exists('$(NuGetPackageRoot)\net.ibm.data.db2-lnx\6.0.0.500\buildTransitive\Net.IBM.Data.Db2-lnx.targets')" />
     <Import Project="$(NuGetPackageRoot)\net.ibm.data.db2\6.0.0.300\buildTransitive\Net.IBM.Data.Db2.targets" Condition="Exists('$(NuGetPackageRoot)\net.ibm.data.db2\6.0.0.300\buildTransitive\Net.IBM.Data.Db2.targets')" />
     <Import Project="$(NuGetPackageRoot)\entityframework\6.4.4\buildTransitive\netcoreapp3.0\EntityFramework.targets" Condition="Exists('$(NuGetPackageRoot)\entityframework\6.4.4\buildTransitive\netcoreapp3.0\EntityFramework.targets')" />
     <Import Project="$(NuGetPackageRoot)\microsoft.codecoverage\16.9.4\build\netstandard1.0\Microsoft.CodeCoverage.targets" Condition="Exists('$(NuGetPackageRoot)\microsoft.codecoverage\16.9.4\build\netstandard1.0\Microsoft.CodeCoverage.targets')" />

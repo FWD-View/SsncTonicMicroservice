@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JcQiPIEAYhI=",
+  "dgSpecHash": "WwOwaZD6UI8=",
   "success": true,
   "projectFilePath": "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\Tonic.Test\\Tonic.Test.csproj",
   "expectedPackageFiles": [
@@ -39,7 +39,6 @@
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\mono.posix.netstandard\\1.0.0\\mono.posix.netstandard.1.0.0.nupkg.sha512",
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\moq\\4.16.1\\moq.4.16.1.nupkg.sha512",
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\net.ibm.data.db2\\6.0.0.300\\net.ibm.data.db2.6.0.0.300.nupkg.sha512",
-    "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\net.ibm.data.db2-lnx\\6.0.0.500\\net.ibm.data.db2-lnx.6.0.0.500.nupkg.sha512",
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\nett\\0.15.0\\nett.0.15.0.nupkg.sha512",
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
@@ -132,7 +131,6 @@
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\system.runtime.interopservices\\4.3.0\\system.runtime.interopservices.4.3.0.nupkg.sha512",
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0\\system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
-    "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\system.runtime.loader\\4.3.0\\system.runtime.loader.4.3.0.nupkg.sha512",
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\system.runtime.numerics\\4.3.0\\system.runtime.numerics.4.3.0.nupkg.sha512",
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\system.runtime.serialization.primitives\\4.1.1\\system.runtime.serialization.primitives.4.1.1.nupkg.sha512",
     "C:\\Users\\vhogden\\Downloads\\tonic-subsetter\\tonic-subsetter\\tonic-subsetter\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",

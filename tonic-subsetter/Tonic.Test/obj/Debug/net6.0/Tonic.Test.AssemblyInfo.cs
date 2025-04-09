@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tonic.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06064d78449ccda5e97578ee836a4df32873d198")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f08ac5e8b61bb5a4d453bdc9ccc1e543badf08f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tonic.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tonic.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
