@@ -1,3 +1,9 @@
+C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.csproj.AssemblyReference.cache
+C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.AssemblyInfoInputs.cache
+C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.AssemblyInfo.cs
+C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.csproj.CoreCompileInputs.cache
+C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.sourcelink.json
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\bin\Debug\net6.0\clidriver\adm\db2trc
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\bin\Debug\net6.0\clidriver\bin\db2cli
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\bin\Debug\net6.0\clidriver\bin\db2level
@@ -163,12 +169,6 @@ C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\bin\Debug\net6.0\Tonic.Common.deps.json
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\bin\Debug\net6.0\Tonic.Common.dll
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\bin\Debug\net6.0\Tonic.Common.pdb
-C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.csproj.AssemblyReference.cache
-C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.AssemblyInfoInputs.cache
-C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.AssemblyInfo.cs
-C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.csproj.CoreCompileInputs.cache
-C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.sourcelink.json
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.dll
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\refint\Tonic.Common.dll
 C:\Users\vhogden\Downloads\tonic-subsetter\tonic-subsetter\tonic-subsetter\Tonic.Common\obj\Debug\net6.0\Tonic.Common.pdb
