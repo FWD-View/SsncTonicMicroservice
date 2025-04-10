@@ -110,7 +110,7 @@ public static class OracleUtilities
         if (dbType.StartsWith("TIMESTAMP") || dbType.StartsWith("TIMESTMP"))
         {
             var date = value is DateTime time ? time : DateTime.Parse(value.ToString()!);
-            var abc= date.ToString("yyyy-MM-dd HH:mm:ss.ffffff");
+            var abc= date.ToString("yyyy-MM-dd-HH:mm:ss.ffffff");
             return abc;
         }
 
@@ -163,7 +163,7 @@ public static class OracleUtilities
                 return value.ToString()!;
             case "DATE":
                 var date = value is DateTime time ? time : DateTime.Parse(value.ToString()!);
-                return date.ToString("yyyy-MM-dd HH:mm:ss");
+                return date.ToString("yyyy-MM-dd");
             case "XMLTYPE":
                 return value.ToString()!;
             case "NUMERIC":
