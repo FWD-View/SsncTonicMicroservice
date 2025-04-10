@@ -49,7 +49,7 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
         var rowWriteQueue = new BlockingCollection<string[]>();
         var tempFilePath = Path.Combine(DBAbstractionLayer.SharedDirectory, $"tonic_subsetter_{RunId}");
 
-       // var (destinationTableName, destinationColumns) = Utilities.SendTo0TableHack(table, columns);
+        // var (destinationTableName, destinationColumns) = Utilities.SendTo0TableHack(table, columns);
 
         var readTasks = SourceConnections.RunOnCategoryWithMultiplexedQueue(table.HostCategory,
             queriesQueue,
@@ -86,18 +86,18 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
         var isDb2 = SourceConnections.IsDB2(table.HostCategory);
         var writeTask = isDb2 ? Utilities.TaskForQueue(csvQueue, () => WriteRowsToCsv(table, tempFilePath, rowWriteQueue, csvQueue, "DB2")) : Utilities.TaskForQueue(csvQueue, () => WriteRowsToCsv(table, tempFilePath, rowWriteQueue, csvQueue));
         var destHost = DestConnections.FindHost(table.HostCategory);
-        UploadFile(table,DestConnections.FindHost(table.HostCategory), SourceConnections.FindSid(table.HostCategory), tempFilePath, csvQueue);
+        UploadFile(table, DestConnections.FindHost(table.HostCategory), SourceConnections.FindSid(table.HostCategory), tempFilePath, csvQueue);
         //var uploadTasks = UploadSubsetRows(table, isIotTable, csvQueue, destinationTableName, destinationColumns, isDb2);
         var uploadTasks = UploadSubsetRows(table, isIotTable, csvQueue, table.TableName, columns, isDb2);
 
         return uploadTasks.Append(readCompleteTask).Append(writeTask).Append(cacheTask).ToArray();
     }
 
-    public void UploadFile(Table table, string schema,string sid, string tempFilePath, BlockingCollection<string> csvQueue)
+    public void UploadFile(Table table, string schema, string sid, string tempFilePath, BlockingCollection<string> csvQueue)
     {
         foreach (var baseFileName in csvQueue.GetConsumingEnumerable())
         {
-            var result = AWSClient.UploadFile(baseFileName, sid, schema,table, tempFilePath);
+            var result = AWSClient.UploadFile(baseFileName, sid, schema, table, tempFilePath);
         }
     }
     public bool IsSchemaRestrictedTable(Table table, string hostSchemaName)
@@ -208,7 +208,7 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
                 {
                     DBAbstractionLayer.BuildSqlLoaderConfig(baseFileName, destinationTable,
                         host.Configuration, columns, isDb2);
-                   // UploadCsv(host.Configuration, DBAbstractionLayer.SharedDirectory, baseFileName, 4_000,                        isIotTable, useConventionalPath);
+                    // UploadCsv(host.Configuration, DBAbstractionLayer.SharedDirectory, baseFileName, 4_000,                        isIotTable, useConventionalPath);
                 }
             });
             uploadTasks.AddRange(uploadTask);
@@ -227,23 +227,23 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
     {
         const int maxUploadAttempts = 3;
         var attempts = 0;
-       
-         var db2LoaderParameters = DB2LoaderUtils.CreateSubsetterImportParameters(
-            path,
-            fileName,
-            maximumRowSizeInBytes,
-            isTableIndexOrganized,
-            useConventionalPath
-        );
-        
-         var sqlLoaderParameters = SqlLoaderUtils.CreateSubsetterImportParameters(
-                        path,
-                        fileName,
-                        maximumRowSizeInBytes,
-                        isTableIndexOrganized,
-                        useConventionalPath                    );
-       
-        
+
+        var db2LoaderParameters = DB2LoaderUtils.CreateSubsetterImportParameters(
+           path,
+           fileName,
+           maximumRowSizeInBytes,
+           isTableIndexOrganized,
+           useConventionalPath
+       );
+
+        var sqlLoaderParameters = SqlLoaderUtils.CreateSubsetterImportParameters(
+                       path,
+                       fileName,
+                       maximumRowSizeInBytes,
+                       isTableIndexOrganized,
+                       useConventionalPath);
+
+
         while (attempts < maxUploadAttempts)
         {
             try
@@ -306,22 +306,33 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
     public static void WriteRowsToCsv(Table table, string tempFilePath, BlockingCollection<string[]> rowWriteQueue,
         BlockingCollection<string> csvQueue, string dbType, int batchRowCountLimit = DBAbstractionLayer.CsvBatchSize)
     {
-        var baseFileName = Path.Combine(tempFilePath, "AR.I02.TONIC."+DateTime.UtcNow.ToString("yyMMdd.HHmmss") + "."+table.TableName);
+        var baseFileName = Path.Combine(tempFilePath, "AR.I02.TONIC." + DateTime.UtcNow.ToString("yyMMdd.HHmmss") + "." + table.TableName);
         var writer = Utilities.OpenTsvFile(baseFileName + ".csv", table.TableName);
         var count = 0L;
         var c = dbType;
         foreach (var row in rowWriteQueue.GetConsumingEnumerable())
         {
             var abc = string.Join(DBAbstractionLayer.CsvColSeparatingChar, Enumerable.Range(0, row.Length)
-                                                             .Select(i => row[i].ToString()));
-                writer.WriteLine(abc);            
+                                                             .Select(i => GetCsvFieldData(row[i].ToString())));
+            writer.WriteLine(abc);
             count += 1;
         }
 
         writer.Dispose();
         if (count != 0) csvQueue.Add(baseFileName);
     }
-    
+
+
+    private static string GetCsvFieldData(string fieldData)
+    {
+        if (fieldData.Contains(",") || fieldData.Contains("\""))
+        {
+            fieldData = "\"" + fieldData.Replace("\"", "\"\"") + "\"";
+        }
+
+        return fieldData;
+    }
+
     private void CreateAndPopulateTableCache(Table table, ImmutableArray<Column> columns,
         BlockingCollection<string[]> pkCacheQueue, ImmutableHashSet<MultiStringKey> primaryKeySets)
     {
