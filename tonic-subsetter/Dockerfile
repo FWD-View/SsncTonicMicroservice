@@ -1,96 +1,86 @@
-ARG DOTNET_CORE_IMAGE=runtime
+# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-# oracle_packager stage to get and configure oracle client
-FROM ecr.vip.ebayc3.com/tess/alpine:hardened AS oracle_packager
-RUN \
-apk update && \
-apk add --no-cache unzip wget
-#rm -rf /var/lib/apt/lists/*
+# This stage is used when running from VS in fast mode (Default for Debug configuration)
+FROM mcr.microsoft.com/dotnet/runtime:6.0 AS base
+WORKDIR /app
 
-# install Oracle Instant Client
-RUN mkdir -p /opt/oracle/ && \
-    wget https://download.oracle.com/otn_software/linux/instantclient/1919000/instantclient-basic-linux.x64-19.19.0.0.0dbru.zip && \
-    wget https://download.oracle.com/otn_software/linux/instantclient/1919000/instantclient-tools-linux.x64-19.19.0.0.0dbru.zip && \
-    wget https://download.oracle.com/otn_software/linux/instantclient/1919000/instantclient-sqlplus-linux.x64-19.19.0.0.0dbru.zip && \
-    unzip instantclient-basic-linux.x64-19.19.0.0.0dbru.zip -d /opt/oracle/ && \
-    unzip instantclient-tools-linux.x64-19.19.0.0.0dbru.zip -d /opt/oracle/ && \
-    unzip instantclient-sqlplus-linux.x64-19.19.0.0.0dbru.zip -d /opt/oracle/ && \
-    rm instantclient-basic-linux.x64-19.19.0.0.0dbru.zip && \
-    rm instantclient-tools-linux.x64-19.19.0.0.0dbru.zip && \
-    rm instantclient-sqlplus-linux.x64-19.19.0.0.0dbru.zip
 
-# Build stage/image
+# This stage is used to build the service project
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
-WORKDIR /source
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
 
-RUN dotnet tool install --tool-path /tools dotnet-sos && \
-  dotnet tool install --tool-path /tools dotnet-counters && \
-  dotnet tool install --tool-path /tools dotnet-dump && \
-  dotnet tool install --tool-path /tools dotnet-gcdump && \
-  dotnet tool install --tool-path /tools dotnet-trace
-
-ARG CONFIGURATION=Release
-ARG PROJECT=Tonic.PrimaryKeyRemapper
-
-# Copy csproj/sln and restore as distinct layers
-COPY *.sln ./
-COPY Tonic.Common/Tonic.Common.csproj Tonic.Common/
-COPY Tonic.ForeignKeyMaskConfigure/Tonic.ForeignKeyMaskConfigure.csproj Tonic.ForeignKeyMaskConfigure/
-COPY Tonic.PrimaryKeyRemapper/Tonic.PrimaryKeyRemapper.csproj Tonic.PrimaryKeyRemapper/
-COPY Tonic.ResetSchema/Tonic.ResetSchema.csproj Tonic.ResetSchema/
-COPY Tonic.Subsetter/Tonic.Subsetter.csproj Tonic.Subsetter/
-COPY Tonic.TableCount/Tonic.TableCount.csproj Tonic.TableCount/
-COPY Tonic.CleanBatch/Tonic.CleanBatch.csproj Tonic.CleanBatch/
-COPY Tonic.SubsetterWebService/Tonic.SubsetterWebService.csproj Tonic.SubsetterWebService/
-COPY Tonic.ReuseRowsAlterations/Tonic.ReuseRowsAlterations.csproj Tonic.ReuseRowsAlterations/
-COPY Tonic.Test/Tonic.Test.csproj Tonic.Test/
-# Tonic.ReuseRowsLocalPrototype is meant for local development only,
-# and as such does not produce a binary when `dotnet publish` is executed.
-# .csproj is copied here so no errors are thrown during compilation
-COPY Tonic.ReuseRowsLocalPrototype/Tonic.ReuseRowsLocalPrototype.csproj Tonic.ReuseRowsLocalPrototype/
-RUN dotnet restore
-
-# Copy and publish app and libraries
+COPY ["Tonic.Subsetter/Tonic.Subsetter.csproj", "Tonic.Subsetter/"]
+COPY ["Tonic.Common/Tonic.Common.csproj", "Tonic.Common/"]
+RUN dotnet restore "./Tonic.Subsetter/Tonic.Subsetter.csproj"
 COPY . .
-WORKDIR /source/${PROJECT}
-RUN dotnet publish -c ${CONFIGURATION} -o /app --no-restore
+WORKDIR "/src/Tonic.Subsetter"
+RUN dotnet build "./Tonic.Subsetter.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# Final stage/image
-FROM mcr.microsoft.com/dotnet/${DOTNET_CORE_IMAGE}:6.0
-ENV TZ UTC
+# This stage is used to publish the service project to be copied to the final stage
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./Tonic.Subsetter.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+# This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+
+# Install required packages for Linux DB2 client
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    binutils \
+    libaio1 \
+    wget \
+    unzip \
+    libxml2 \
+    && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Download and install IBM Data Server Driver
+WORKDIR /tmp
+RUN wget -q https://public.dhe.ibm.com/ibmdl/export/pub/software/data/db2/drivers/odbc_cli/linuxx64_odbc_cli.tar.gz && \
+    mkdir -p /opt/ibm/db2/clidriver && \
+    tar -xzf linuxx64_odbc_cli.tar.gz -C /opt/ibm/db2/clidriver --strip-components=1 && \
+    rm -f linuxx64_odbc_cli.tar.gz
+
+# Copy the application
 WORKDIR /app
 COPY --from=build /app .
 
-# dotnet tools
-WORKDIR /tools
-COPY --from=build /tools .
-ENV PATH=/tools:$PATH
-  
+# Install additional dependencies
 RUN apt-get update && \
   apt-get install -y --no-install-recommends \
-  dnsutils \
-  libaio1 \
-  libaio-dev \
-  netcat \
-  telnet \
-  vim \
-  && \
+    dnsutils \
+    libstdc++6 \
+    libaio-dev \
+    netcat \
+    telnet \
+    vim && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 
-# Use oracle-packager to configure oracle client
-COPY --from=oracle_packager /opt/oracle /opt/oracle
+# Remove any previously copied or conflicting DB2 files in /app/clidriver
+RUN rm -rf /app/clidriver/lib /app/clidriver/bin
 
-RUN sh -c "echo /opt/oracle/instantclient_19_19 > /etc/ld.so.conf.d/oracle-instantclient.conf" && \
-  ldconfig
+# Copy DB2 libraries to standard Linux locations (only from the /opt/ibm/db2/clidriver path)
+RUN mkdir -p /app/clidriver/lib && \
+    cp -r /opt/ibm/db2/clidriver/lib/* /app/clidriver/lib/ && \
+    mkdir -p /app/clidriver/bin && \
+    cp -r /opt/ibm/db2/clidriver/bin/* /app/clidriver/bin/
 
-ENV NLS_LANG=AMERICAN_AMERICA.AL32UTF8
-ENV ORACLE_HOME=/opt/oracle/instantclient_19_19
-ENV PATH=$PATH:/opt/oracle/instantclient_19_19
+# Set correct permissions for the DB2 libraries and binaries
+RUN chmod 755 /app/clidriver/lib/*.so* && \
+    chmod 755 /app/clidriver/bin/*
 
-# Miscellaneous files
-COPY files/start-aspnetcore-app.sh /usr/local/bin/start-aspnetcore-app.sh
+# Set environment variables for DB2
+ENV DB2_CLI_DRIVER_INSTALL_PATH=/app/clidriver
+ENV IBM_DB_HOME=/app/clidriver
+ENV LD_LIBRARY_PATH=/app/clidriver/lib:${LD_LIBRARY_PATH}
+ENV PATH=/app/clidriver/bin:${PATH}
 
-WORKDIR /source/${PROJECT}
 
-ENTRYPOINT ["/usr/local/bin/start-aspnetcore-app.sh"]
+
+ENTRYPOINT ["dotnet", "Tonic.Subsetter.dll"]
