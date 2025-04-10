@@ -9,7 +9,6 @@ using Tonic.Common;
 using Tonic.Common.Configs;
 using Tonic.Common.Enums;
 using Tonic.Common.Helpers;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Tonic.Subsetter.Utils;
 

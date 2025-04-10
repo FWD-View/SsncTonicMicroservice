@@ -98,6 +98,8 @@ public class HostConfig
             Server = $"{Host}:{Port}",
             HostVarParameters= true
         };
+        Console.WriteLine(connStringBld.ToString());
+
         DB2Connection MyDb2Connection = new DB2Connection(connStringBld.ToString());
         return MyDb2Connection;
     }

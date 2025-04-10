@@ -1,0 +1,24 @@
+services:
+  tonic.subsetter:
+    image: sushmasao353/tonic-subsetter:0.0.18
+    build:
+      context: .
+      dockerfile: Tonic.Subsetter/Dockerfile
+    volumes:
+      - ./toml-config:/app/subsetter/toml-config
+    networks:
+      - tonic-ai
+    environment:
+      - LD_LIBRARY_PATH=/app/clidriver/lib
+      - DB2_CLI_DRIVER_INSTALL_PATH=/app/clidriver
+      - IBM_DB_HOME=/app/clidriver
+      - PATH=/app/clidriver/bin:${PATH}
+      - DB2_HOST=rrg1.dstcorp.net  # Replace with DB2 server IP/hostname
+      - DB2_PORT=5015  # Default DB2 port, adjust if needed
+      - DB2_DATABASE=DBB0  # DB2 database name
+      - DB2_USER=DRDDR2RT  # DB2 user
+      - DB2_PASSWORD=DJ5TYQWC  # DB2 password
+    command: ["/app/subsetter/toml-config/ssc_tes_db2.toml"]
+networks:
+  tonic-ai:
+    driver: bridge
