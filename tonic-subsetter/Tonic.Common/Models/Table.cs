@@ -10,6 +10,8 @@ public class Table : IComparable
     public string HostCategory { get; init; }
     public string TableName { get; init; }
 
+    public string TableAliasName { get; set; } 
+
     public Table(string hostCategory, string tableName, bool groupedTable = false)
     {
         HostCategory = hostCategory;

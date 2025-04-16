@@ -306,7 +306,7 @@ public record CopyRowsService(string RunId, ISubsetConfig Config, IHostsService 
     public static void WriteRowsToCsv(Table table, string tempFilePath, BlockingCollection<string[]> rowWriteQueue,
         BlockingCollection<string> csvQueue, string dbType, int batchRowCountLimit = DBAbstractionLayer.CsvBatchSize)
     {
-        var baseFileName = Path.Combine(tempFilePath, "AR.I02.TONIC." + DateTime.UtcNow.ToString("yyMMdd.HHmmss") + "." + table.TableName);
+        var baseFileName = Path.Combine(tempFilePath, "AR.I02.TONIC." + DateTime.UtcNow.ToString("yyMMdd.HHmmss") + "." + table.TableAliasName);
         var writer = Utilities.OpenTsvFile(baseFileName + ".csv", table.TableName);
         var count = 0L;
         var c = dbType;

@@ -3,15 +3,18 @@
  */
 
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Xml.Linq;
 using Oracle.ManagedDataAccess.Client;
 using Serilog;
+using Tonic.Common.Extensions;
 using Tonic.Common.Helpers;
 using Tonic.Common.Models;
 
@@ -259,4 +262,50 @@ GROUP BY
 
         command.CommandText = text;
     }
+
+
+    public static ImmutableDictionary<string, string> GetTableAlias(IHost host, IList<string> tableNames)
+    {
+
+
+        var paramList = string.Join(", ", tableNames.Select((_, i) => $"@p{i}"));
+
+        var query = $@"SELECT 
+                            TBNAME, name  
+                        FROM 
+                            sysibm.systables 
+                        WHERE 
+                            TBNAME in ({paramList}) 
+                            and type= 'A' 
+                            and creator ='{host.Configuration.Schema}' ;";
+
+        Dictionary<string, string> param = new Dictionary<string, string>();
+
+        int i = 0;
+        foreach (var val in tableNames)
+        {
+            param.Add($"@p{i}", val);
+            i++;
+        }
+
+        using var reader = host.ExecuteParameterizedQuery(query, param);
+        var aliasValue = new Dictionary<string, string>();
+        var hostCategory = host.Configuration.HostCategory;
+        while (reader.Read())
+        {
+            var tableName = reader.GetString(0);
+            var alias = reader.GetString(1);
+
+
+            if (!aliasValue.ContainsKey(tableName))
+            {
+
+                aliasValue.Add(tableName, alias.Substring(0,3));
+            }
+        }
+
+        return aliasValue.ToImmutableDictionary();
+    }
+
+
 }

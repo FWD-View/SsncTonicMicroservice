@@ -89,7 +89,13 @@ namespace Tonic.Common.CommonAbstraction
                        schema.Schema, columns);
             }
         }
-        
+
+
+        public static ImmutableDictionary<string,string> GetTableAlias(IHost host,IList<string> tableNames)
+        {
+            return DB2Utilities.GetTableAlias(host, tableNames);
+        }
+
     }
 
 }

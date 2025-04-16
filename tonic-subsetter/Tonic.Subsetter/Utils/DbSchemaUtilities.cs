@@ -76,4 +76,21 @@ public record DbSchemaUtilities
         });
         return allIoTTables.ToImmutableHashSet();
     }
+
+    public static ImmutableDictionary<string, string> GetTableAliasName(IHostsService connections, IList<string> tableNames)
+    {
+        var retVal = new ConcurrentDictionary<string, string>();
+        connections.RunOnCanDbLinkHostsAndWait((_, host) =>
+        {
+            var tableVal = DBAbstractionLayer.GetTableAlias(host, tableNames);
+            if (tableVal == null) return;
+            foreach (var group in tableVal)
+            {
+                retVal.TryAdd(group.Key, group.Value);
+            }
+        });
+        return retVal.ToImmutableDictionary();
+    }
+
+
 }

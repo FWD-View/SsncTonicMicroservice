@@ -103,7 +103,7 @@ public static class OracleUtilities
         {
             return BlobTypes.Contains(dbType)
                 ? $"<blob-438f58ee-f378-41d4-901d-6d7846784e38>{NullChar}<blob-438f58ee-f378-41d4-901d-6d7846784e38>"
-                : NullChar;
+                : string.Empty;
         }
 
         dbType = dbType.ToUpper();

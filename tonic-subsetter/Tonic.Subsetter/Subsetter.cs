@@ -5,6 +5,7 @@ using System.Collections.Immutable;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using Serilog;
 using Serilog.Events;
@@ -48,7 +49,7 @@ public class Subsetter
         stopWatch.Start();
 
         var columns = DbSchemaUtilities.CollectSourceSchemaInformation(SourceConnections);
-        var iotTables =  DbSchemaUtilities.CollectIoTTables(SourceConnections);
+        var iotTables = DbSchemaUtilities.CollectIoTTables(SourceConnections);
         AssertColumnsHasAllTables(columns, orderedTableActions.Select(action => action.Table));
 
 
@@ -136,6 +137,21 @@ public class Subsetter
                 new SubsetTraversal(Config.ForeignKeys, Config.DirectTargets.Select(dst => dst.Table).ToHashSet(),
                         Config.AdditionalUpstreamStarts.ToHashSet())
                     .GetTraversalOrder().ToList();
+
+
+            var result = DbSchemaUtilities.GetTableAliasName(SourceConnections, orderedTableActions.Select(ret => ret.Table.TableName).ToList());
+
+            foreach (var tableValue in orderedTableActions)
+            {
+                var retVal = result.FirstOrDefault(val => val.Key == tableValue.Table.TableName);
+                if (retVal.Value != null)
+                {
+                    tableValue.Table.TableAliasName = retVal.Value;
+                }
+            }
+
+
+
         }
         catch (CycleFoundException ex)
         {
